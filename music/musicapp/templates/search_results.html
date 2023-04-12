@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Music Search - Search Results{% endblock %}
+
+{% block content %}
+    <h1>Search Results for "{{ term }}"</h1>
+    <ul>
+    {% for result in results %}
+        <li>{{ result.collectionName }} by {{ result.artistName }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

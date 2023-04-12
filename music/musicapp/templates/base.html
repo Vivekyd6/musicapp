@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Search</title>
+    <link rel="stylesheet" href="{% static 'search.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Music Search</h1>
+    </header>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Music Search. All rights reserved.</p>
+    </footer>
+</body>
+</html>

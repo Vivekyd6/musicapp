@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Music Search - Search{% endblock %}
+
+{% block content %}
+    <h2>Search for Music</h2>
+    <form action="{% url 'search_results' %}" method="get">
+        <input type="text" name="term" placeholder= "Enter the text">
+        <input type="submit" value="Search">
+    </form>
+{% endblock %}
